@@ -45,7 +45,7 @@ pipelines:
           inputResources:
             - name: dbp_repo
           integrations:
-            - name: DRD_Docker_Artifactory                           # <-- replace with your artifactory integration
+            - name: DRD_Artifactory                           # <-- replace with your artifactory integration
 
       - name: docker_push
         type: DockerPush
@@ -53,7 +53,7 @@ pipelines:
           affinityGroup: dbp_group
           targetRepository: drd-docker
           integrations:
-            - name: DRD_Docker_Artifactory                            # <-- replace with your artifactory integration
+            - name: DRD_Artifactory                            # <-- replace with your artifactory integration
           inputSteps:
             - name: docker_build
           outputResources:
