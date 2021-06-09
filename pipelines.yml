@@ -10,7 +10,7 @@ resources:
   - name: dbp_image
     type: Image
     configuration:
-      registry: DRD_Docker_Artifactory                                # <-- replace with your artifactory integration
+      registry: DRD_Artifactory                                # <-- replace with your artifactory integration
       sourceRepository: DRD_Artifactory               # <-- required if registry is Artifactory
       imageName: drd-docker/dbp # < -- replace with your image path and name
       imageTag: latest
