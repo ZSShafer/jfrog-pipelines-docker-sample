@@ -1,1 +1,1 @@
-This is the 3rd test to confirm the pipeline is properly setup.
+This is test 4 to confirm the pipeline is properly setup.
